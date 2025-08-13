@@ -1,0 +1,37 @@
+
+    [
+        {
+     "id": 1,     "name": "Alice Sharma",
+            "email": "alice.sharma@example.com",
+            "phone": "+91 98765 43210",
+            "image": "https://randomuser.me/api/portraits/women/45.jpg",
+            "age": 29,
+            "employeeId": "EMP001"
+        },
+        {   "id":2,
+            "name": "Rahul Verma",
+            "email": "rahul.verma@example.com",
+            "phone": "+91 98765 43211",
+            "image": "https://randomuser.me/api/portraits/men/22.jpg",
+            "age": 35,
+            "employeeId": "EMP002"
+        },
+        {   "id":3,
+            "name": "Sneha Kapoor",
+            "email": "sneha.kapoor@example.com",
+            "phone": "+91 98765 43212",
+            "image": "https://randomuser.me/api/portraits/women/33.jpg",
+            "age": 42,
+            "employeeId": "EMP003"
+        },
+        {
+            "id":4,
+            "name": "Mohit Singh",
+            "email": "mohit.singh@example.com",
+            "phone": "+91 98765 43213",
+            "image": "https://randomuser.me/api/portraits/men/55.jpg",
+            "age": 26,
+            "employeeId": "EMP004"
+        }
+    ]
+    
