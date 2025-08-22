@@ -28,7 +28,7 @@ const App = () => {
     if (age >= 18) {
       setMessage("✅ You are 18 or older. You can enter.");
     } else {
-      setMessage("❌ You are under 18. Go watch pogo.");
+      setMessage("❌ You are under 18.");
     }
   };
 
