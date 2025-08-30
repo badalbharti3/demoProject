@@ -1,6 +1,7 @@
 body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color:  #5a5858;
+        font-family: Arial;
+        background-color:  #121212;
+        color: #ffffff;
         margin: 0;
         padding: 0;
         height: 100vh;
@@ -9,38 +10,123 @@ body {
         align-items: center;
       }
       .card {
-        background-color: #14222e;
-        border-radius: 8px;
-        padding: 30px;
-        width: 300px;
+        background: #1a1a1a;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        max-width: 400px;
+        margin: 2rem auto;
       }
       h2 {
-        color: #e9e5e5;
+        color: #ffffff;
+        margin-bottom: 1.5rem;
         text-align: center;
-        margin-bottom: 40px;
+        font-size: 1.8rem;
       }
-      h3{
-        color: #e9e5e5;
-        text-align: center;
-        margin-bottom: 10px;
+      h3 {
+        color: #e0e0e0;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
       }
-      form {
+      .date-inputs {
         display: flex;
-        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 1.5rem;
       }
-      input {
-        margin-bottom: 15px;
+      .date-inputs select {
+        flex: 1;
         padding: 10px;
-        border-radius: 5px;
-        border: 1px solid black;
-        background-color: #5d4242;
+        font-size: 1rem;
+        border: 2px solid #333;
+        border-radius: 8px;
+        background-color: #2a2a2a;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .date-inputs select:hover {
+        border-color: #3498db;
+      }
+      .date-inputs select:focus {
+        outline: none;
+        border-color: #3498db;
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+      }
+      .date-inputs option {
+        background-color: #2a2a2a;
+        color: #ffffff;
       }
       button {
-        background-color: #3d9df1;
-        color: #fff;
-        padding: 10px;
+        width: 100%;
+        padding: 12px;
+        background-color: #3498db;
+        color: white;
+        border: none;
         border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
       }
       button:hover {
-        background-color: #0741ac;
+        background-color: #2980b9;
+      }
+      button:active {
+        transform: scale(0.98);
+      }
+      .message {
+        margin-top: 1rem;
+        padding: 12px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 500;
+        animation: fadeIn 0.3s ease;
+      }
+      .message.success {
+        background-color: #2ecc71;
+        color: #ffffff;
+      }
+      .message.error {
+        background-color: #e74c3c;
+        color: #ffffff;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .button-group {
+        display: flex;
+        gap: 12px;
+        width: 100%;
+      }
+      
+      .button-group button {
+        flex: 1;
+        padding: 12px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      
+      .button-group button:hover {
+        background-color: #2980b9;
+      }
+      
+      .reset-button {
+        background-color: #e74c3c !important;
+      }
+      
+      .reset-button:hover {
+        background-color: #c0392b !important;
       }
